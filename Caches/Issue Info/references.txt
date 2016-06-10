@@ -1,0 +1,1 @@
+{"abortion":["https:\/\/en.wikipedia.org\/wiki\/Abortion",null,null,null],"campaign_finance":["https:\/\/en.wikipedia.org\/wiki\/Campaign_finance","https:\/\/en.wikipedia.org\/wiki\/Political_campaign","https:\/\/en.wikipedia.org\/wiki\/Finance",null]}
