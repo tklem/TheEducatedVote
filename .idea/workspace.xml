@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61853609-6bef-4a47-9263-7755a8f864de" name="Default" comment="" />
+    <list default="true" id="61853609-6bef-4a47-9263-7755a8f864de" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Photos/campaign_finance_picture.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/CreatePatron.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/PatronHome.php" afterPath="$PROJECT_DIR$/PatronHome.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TheIssuesExplained.php" afterPath="$PROJECT_DIR$/TheIssuesExplained.php" />
+    </list>
     <ignored path="TheEducatedVote.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -39,31 +46,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="TheIssuesExplained.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TheIssuesExplained.php">
+      <file leaf-file-name="SubmittedInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SubmittedInfo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="45" />
-              <folding />
+            <state relative-caret-position="795">
+              <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
+              <folding>
+                <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
+                <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
+                <marker date="1465406539046" expanded="true" signature="2750:2884" ph="INSERT INTO theeducatedvote.submitted_info... " />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TheEducatedVoteIndex.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TheEducatedVoteIndex.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="65" column="46" selection-start-line="64" selection-start-column="36" selection-end-line="65" selection-end-column="46" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PatronHome.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PatronHome.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PatronHome.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="178" column="51" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
+            <state relative-caret-position="160">
+              <caret line="162" column="82" selection-start-line="162" selection-start-column="82" selection-end-line="162" selection-end-column="82" />
               <folding>
                 <element signature="n#getPatronInfo#0;n#!!top" expanded="false" />
                 <element signature="n#getPatronBasicInfo#0;n#!!top" expanded="false" />
@@ -73,33 +74,23 @@
                 <element signature="n#stancesJsonInterpret#0;n#!!top" expanded="false" />
                 <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
                 <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
-                <marker date="1465587451657" expanded="true" signature="816:888" ph="SELECT * FRO... patrons_basic_info" />
-                <marker date="1465587451657" expanded="true" signature="2807:2884" ph="SELECT * FRO... patrons_issues_importances" />
-                <marker date="1465587451657" expanded="true" signature="4125:4193" ph="SELECT * FRO... patrons_issues_yn" />
-                <marker date="1465587451657" expanded="true" signature="5381:5454" ph="SELECT * FRO... patrons_issues_stances" />
-                <marker date="1465587451657" expanded="true" signature="9308:9349" ph="..." />
-                <marker date="1465587451657" expanded="true" signature="10205:10345" ph="INSERT INTO theeducatedvote.patrons_issues_stances... " />
-                <marker date="1465587451657" expanded="true" signature="10778:10837" ph="..." />
-                <marker date="1465587451657" expanded="true" signature="10778:11889" ph="..." />
-                <marker date="1465587451657" expanded="true" signature="10785:10837" ph="..." />
-                <marker date="1465587451657" expanded="true" signature="11018:11398" ph="..." />
-                <marker date="1465587451657" expanded="true" signature="11870:11889" ph="..." />
+                <marker date="1465603425526" expanded="true" signature="816:888" ph="SELECT * FRO... patrons_basic_info" />
+                <marker date="1465603425526" expanded="true" signature="2807:2884" ph="SELECT * FRO... patrons_issues_importances" />
+                <marker date="1465603425526" expanded="true" signature="4125:4193" ph="SELECT * FRO... patrons_issues_yn" />
+                <marker date="1465603425526" expanded="true" signature="5381:5454" ph="SELECT * FRO... patrons_issues_stances" />
+                <marker date="1465603425526" expanded="true" signature="9393:9434" ph="..." />
+                <marker date="1465603425526" expanded="true" signature="10290:10430" ph="INSERT INTO theeducatedvote.patrons_issues_stances... " />
+                <marker date="1465603425526" expanded="true" signature="10863:10922" ph="..." />
+                <marker date="1465603425526" expanded="true" signature="10863:11974" ph="..." />
+                <marker date="1465603425526" expanded="true" signature="10870:10922" ph="..." />
+                <marker date="1465603425526" expanded="true" signature="11103:11483" ph="..." />
+                <marker date="1465603425526" expanded="true" signature="11955:11974" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stances.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Caches/Issue Info/stances.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConstructUpdateRedirect.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ConstructUpdateRedirect.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ConstructUpdateRedirect.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="516">
@@ -195,16 +186,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SubmittedNews.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SubmittedNews.php">
+      <file leaf-file-name="CreatePatron.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CreatePatron.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="85" selection-end-column="5" />
-              <folding>
-                <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
-                <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
-                <marker date="1465414731146" expanded="true" signature="2636:2852" ph="INSERT INTO theeducatedvote.submitted_info... " />
-              </folding>
+            <state relative-caret-position="25">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -219,6 +206,9 @@
         <option value="JavaScript File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -253,7 +243,6 @@
         <option value="$PROJECT_DIR$/2016/President/Bernie Sanders.php" />
         <option value="$PROJECT_DIR$/caches/2016/President/Bernie Sanders.txt" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/8d0c5104-8604-4299-8836-fdc85c68184e/console.sql" />
-        <option value="$PROJECT_DIR$/TheIssuesExplained.php" />
         <option value="$PROJECT_DIR$/ConstructUpdateRedirect.php" />
         <option value="$PROJECT_DIR$/Styles/submitInfoStyle.sass" />
         <option value="$PROJECT_DIR$/Scripts/SubmitNewsScript.js" />
@@ -264,6 +253,9 @@
         <option value="$PROJECT_DIR$/Scripts/SubmitInfoScript.js" />
         <option value="$PROJECT_DIR$/TheEducatedVoteConstants.php" />
         <option value="$PROJECT_DIR$/TheEducatedVoteIndex.php" />
+        <option value="$PROJECT_DIR$/TheIssuesExplained.php" />
+        <option value="$PROJECT_DIR$/NewUser.php" />
+        <option value="$PROJECT_DIR$/CreatePatron.php" />
         <option value="$PROJECT_DIR$/PatronHome.php" />
       </list>
     </option>
@@ -300,14 +292,14 @@
       </profile-state>
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -355,6 +347,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Scripts" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheEducatedVote" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TheEducatedVote" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Photos" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -507,21 +513,21 @@
       <workItem from="1464929320074" duration="4897000" />
       <workItem from="1464978166922" duration="24653000" />
       <workItem from="1465149150344" duration="18847000" />
-      <workItem from="1465345996349" duration="34640000" />
+      <workItem from="1465345996349" duration="43405000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="265137000" />
+    <option name="totallyTimeSpent" value="273902000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19322917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32993197" sideWeight="0.503125" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14427084" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.159375" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32879817" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11678004" sideWeight="0.496875" order="2" side_tool="false" content_ui="tabs" />
@@ -552,25 +558,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="54" />
+      <option name="time" value="60" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/TheEducatedVoteSidebar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheEducatedVoteFooter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="1" column="24" selection-start-line="1" selection-start-column="24" selection-end-line="1" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/educatedvotepatrons.candidateinfo">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -758,13 +750,6 @@
     <entry file="file://$PROJECT_DIR$/caches/definitions.txt" />
     <entry file="file://$PROJECT_DIR$/caches/categories.txt" />
     <entry file="file://$PROJECT_DIR$/caches/references.txt" />
-    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/expansions.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/UpdateInfo.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -822,14 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SubmitNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/TheEducatedVoteConstants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -870,6 +847,221 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.submitted_info">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.submitted_news">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.patrons_issues_stances">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.patrons_issues_importances">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/categories.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubmittedNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="85" selection-end-column="5" />
+          <folding>
+            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
+            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
+            <marker date="1465414731146" expanded="true" signature="2636:2852" ph="INSERT INTO theeducatedvote.submitted_info... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheEducatedVoteIndex.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="65" column="46" selection-start-line="64" selection-start-column="36" selection-end-line="65" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/expansions.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/tiles.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubmittedInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
+          <folding>
+            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
+            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
+            <marker date="1465406539046" expanded="true" signature="2750:2884" ph="INSERT INTO theeducatedvote.submitted_info... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.issue_stances">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CreatePatron.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/stances.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PatronHome.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="162" column="82" selection-start-line="162" selection-start-column="82" selection-end-line="162" selection-end-column="82" />
+          <folding>
+            <element signature="n#getPatronInfo#0;n#!!top" expanded="false" />
+            <element signature="n#getPatronBasicInfo#0;n#!!top" expanded="false" />
+            <element signature="n#getPatronIssuesImportances#0;n#!!top" expanded="false" />
+            <element signature="n#getPatronIssuesYN#0;n#!!top" expanded="false" />
+            <element signature="n#getPatronIssuesStances#0;n#!!top" expanded="false" />
+            <element signature="n#stancesJsonInterpret#0;n#!!top" expanded="false" />
+            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
+            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
+            <marker date="1465603425526" expanded="true" signature="816:888" ph="SELECT * FRO... patrons_basic_info" />
+            <marker date="1465603425526" expanded="true" signature="2807:2884" ph="SELECT * FRO... patrons_issues_importances" />
+            <marker date="1465603425526" expanded="true" signature="4125:4193" ph="SELECT * FRO... patrons_issues_yn" />
+            <marker date="1465603425526" expanded="true" signature="5381:5454" ph="SELECT * FRO... patrons_issues_stances" />
+            <marker date="1465603425526" expanded="true" signature="9393:9434" ph="..." />
+            <marker date="1465603425526" expanded="true" signature="10290:10430" ph="INSERT INTO theeducatedvote.patrons_issues_stances... " />
+            <marker date="1465603425526" expanded="true" signature="10863:10922" ph="..." />
+            <marker date="1465603425526" expanded="true" signature="10863:11974" ph="..." />
+            <marker date="1465603425526" expanded="true" signature="10870:10922" ph="..." />
+            <marker date="1465603425526" expanded="true" signature="11103:11483" ph="..." />
+            <marker date="1465603425526" expanded="true" signature="11955:11974" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/TheIssuesExplained.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="74">
+          <caret line="12" column="75" selection-start-line="12" selection-start-column="75" selection-end-line="12" selection-end-column="75" />
+          <folding>
+            <element signature="n#updateCache#0;n#!!top" expanded="false" />
+            <element signature="n#checkAndMakeDirectories#0;n#!!top" expanded="false" />
+            <element signature="n#updateCategoriesCache#0;n#!!top" expanded="false" />
+            <element signature="n#getCategoriesFromDatabase#0;n#!!top" expanded="false" />
+            <element signature="n#updateDefinitionsAndReferencesCaches#0;n#!!top" expanded="false" />
+            <element signature="n#getDefinitionsAndReferencesFromDatabase#0;n#!!top" expanded="false" />
+            <element signature="n#updateStancesCache#0;n#!!top" expanded="false" />
+            <element signature="n#getStancesFromDatabase#0;n#!!top" expanded="false" />
+            <element signature="n#makeNavBar#0;n#!!top" expanded="false" />
+            <element signature="n#updateTilesCache#0;n#!!top" expanded="false" />
+            <element signature="n#makeTiles#0;n#!!top" expanded="false" />
+            <element signature="n#getStancesCheckboxesHtml#0;n#!!top" expanded="false" />
+            <element signature="n#updateExpansionsCache#0;n#!!top" expanded="false" />
+            <element signature="n#makeExpansionsPopups#0;n#!!top" expanded="false" />
+            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
+            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
+            <marker date="1465602526284" expanded="true" signature="3969:4015" ph="SELECT * FRO... issue_categories" />
+            <marker date="1465602526284" expanded="true" signature="5732:5779" ph="SELECT * FRO... issue_definitions" />
+            <marker date="1465602526284" expanded="true" signature="6501:6544" ph="SELECT * FRO... issue_stances" />
+            <marker date="1465602526284" expanded="true" signature="7549:7640" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="7585:7629" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="8699:9536" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="8751:8847" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="8897:9112" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="9164:9521" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="9428:9503" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="12131:12866" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="12182:12263" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="12313:12402" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="12454:12851" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="12509:12648" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="12705:12832" ph="..." />
+            <marker date="1465602526284" expanded="true" signature="13364:13405" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SubmitNews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="23" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -963,155 +1155,6 @@
             <marker date="1465073532245" expanded="true" signature="28059:28078" ph="..." />
             <marker date="1465073532245" expanded="true" signature="28788:28878" ph="SELECT id FR... candidates_basic_info" />
             <marker date="1465073532245" expanded="true" signature="29862:29903" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.submitted_info">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.submitted_news">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SubmittedInfo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1106">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="107" selection-end-column="1" />
-          <folding>
-            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
-            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
-            <marker date="1465406539046" expanded="true" signature="2750:2884" ph="INSERT INTO theeducatedvote.submitted_info... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SubmittedNews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="68" column="4" selection-start-line="68" selection-start-column="4" selection-end-line="85" selection-end-column="5" />
-          <folding>
-            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
-            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
-            <marker date="1465414731146" expanded="true" signature="2636:2852" ph="INSERT INTO theeducatedvote.submitted_info... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.patrons_issues_stances">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.patrons_issues_importances">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/categories.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/d72d239d/8d0c5104-8604-4299-8836-fdc85c68184e/theeducatedvote.issue_stances">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Caches/Issue Info/stances.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheEducatedVoteIndex.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="65" column="46" selection-start-line="64" selection-start-column="36" selection-end-line="65" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TheIssuesExplained.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="19" column="28" selection-start-line="19" selection-start-column="28" selection-end-line="19" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PatronHome.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="178" column="51" selection-start-line="178" selection-start-column="51" selection-end-line="178" selection-end-column="51" />
-          <folding>
-            <element signature="n#getPatronInfo#0;n#!!top" expanded="false" />
-            <element signature="n#getPatronBasicInfo#0;n#!!top" expanded="false" />
-            <element signature="n#getPatronIssuesImportances#0;n#!!top" expanded="false" />
-            <element signature="n#getPatronIssuesYN#0;n#!!top" expanded="false" />
-            <element signature="n#getPatronIssuesStances#0;n#!!top" expanded="false" />
-            <element signature="n#stancesJsonInterpret#0;n#!!top" expanded="false" />
-            <element signature="n#debug_to_console#0;n#!!top" expanded="false" />
-            <element signature="n#var_dump_pre#0;n#!!top" expanded="false" />
-            <marker date="1465587451657" expanded="true" signature="816:888" ph="SELECT * FRO... patrons_basic_info" />
-            <marker date="1465587451657" expanded="true" signature="2807:2884" ph="SELECT * FRO... patrons_issues_importances" />
-            <marker date="1465587451657" expanded="true" signature="4125:4193" ph="SELECT * FRO... patrons_issues_yn" />
-            <marker date="1465587451657" expanded="true" signature="5381:5454" ph="SELECT * FRO... patrons_issues_stances" />
-            <marker date="1465587451657" expanded="true" signature="9308:9349" ph="..." />
-            <marker date="1465587451657" expanded="true" signature="10205:10345" ph="INSERT INTO theeducatedvote.patrons_issues_stances... " />
-            <marker date="1465587451657" expanded="true" signature="10778:10837" ph="..." />
-            <marker date="1465587451657" expanded="true" signature="10778:11889" ph="..." />
-            <marker date="1465587451657" expanded="true" signature="10785:10837" ph="..." />
-            <marker date="1465587451657" expanded="true" signature="11018:11398" ph="..." />
-            <marker date="1465587451657" expanded="true" signature="11870:11889" ph="..." />
           </folding>
         </state>
       </provider>

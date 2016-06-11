@@ -2,16 +2,15 @@
 include 'TheEducatedVoteConstants.php';
 include 'DatabaseConnection.php';
 
-$issueCategories = array();
 $issueDefinitions = array();
 $issueReferences = array();
 $issueStances = array();
 
-updateCache($issueCategories, $issueDefinitions, $issueReferences, $issueStances);
+updateCache($issueDefinitions, $issueReferences, $issueStances);
 
 //updates the caches for this page and also assigns their values back to the passed variables by reference
 //this way we can get get them (since they are in the full scope of this PHP script) via jquery via json_encode later
-function updateCache(&$issueCategories, &$issueDefinitions, &$issueReferences, &$issueStances)
+function updateCache(&$issueDefinitions, &$issueReferences, &$issueStances)
 {
     //debug_to_console('hit update cache');
     $consts = Constants::getInstance();
@@ -22,6 +21,7 @@ function updateCache(&$issueCategories, &$issueDefinitions, &$issueReferences, &
     $definitions_cache_file = $cache_dir .'/definitions.txt'; //cache for categories array
     $references_cache_file = $cache_dir .'/references.txt'; //cache for categories array
     $stances_cache_file = $cache_dir .'/stances.txt'; //cache for categories array
+    $tiles_cache_file = $cache_dir .'/tiles.txt'; //cache for the issue tiles
     $expansions_cache_file = $cache_dir .'/expansions.txt'; //cache for the expansions popups for all the issues
     checkAndMakeDirectories($cache_dir); //ensure theese files' home directory exists and create it if it doesn't
 
@@ -29,18 +29,22 @@ function updateCache(&$issueCategories, &$issueDefinitions, &$issueReferences, &
     if (!file_exists($definitions_cache_file) || filemtime($definitions_cache_file) < (time() - 86400) || !file_exists($references_cache_file) || filemtime($references_cache_file) < (time() - 86400)) {updateDefinitionsAndReferencesCaches($definitions_cache_file, $references_cache_file);}//if file doesn't exist or it hasn't been updated in 24 hours
     if (!file_exists($stances_cache_file) || filemtime($stances_cache_file) < (time() - 86400)) {updateStancesCache($stances_cache_file);}//if file doesn't exist or it hasn't been updated in 24 hours
 
-    $issueCategories = json_decode(file_get_contents($categories_cache_file), true);
+    //$issueCategories = json_decode(file_get_contents($categories_cache_file), true);
     //var_dump_pre($issueCategories);
-    $issueDefinitions = json_decode(file_get_contents($definitions_cache_file), true);
+    //$issueDefinitions = json_decode(file_get_contents($definitions_cache_file), true);
     //var_dump_pre($issueDefinitions);
-    $issueReferences = json_decode(file_get_contents($references_cache_file), true);
+    //$issueReferences = json_decode(file_get_contents($references_cache_file), true);
     //var_dump_pre($issueReferences);
-    $issueStances = json_decode(file_get_contents($stances_cache_file), true);
+    //$issueStances = json_decode(file_get_contents($stances_cache_file), true);
     //var_dump_pre($issueStances);
 
-    if (!file_exists($expansions_cache_file) || filemtime($expansions_cache_file) < (time() - 86400)) {updateExpansionsCache($expansions_cache_file,$issueDefinitions, $issueReferences, $issueStances);}//if file doesn't exist or it hasn't been updated in 24 hours
-    $issueExpansions = json_decode(file_get_contents($expansions_cache_file), true);
-    var_dump_pre($issueExpansions);
+    if (!file_exists($tiles_cache_file) || filemtime($tiles_cache_file) < (time() - 86400)) {updateTilesCache($tiles_cache_file, $stances_cache_file);}//if file doesn't exist or it hasn't been updated in 24 hours
+    //$tiles = json_decode(file_get_contents($tiles_cache_file), true);
+    //var_dump_pre($tiles);
+
+    if (!file_exists($expansions_cache_file) || filemtime($expansions_cache_file) < (time() - 86400)) {updateExpansionsCache($expansions_cache_file, $issueDefinitions, $issueReferences, $issueStances);}//if file doesn't exist or it hasn't been updated in 24 hours
+    //$issueExpansions = json_decode(file_get_contents($expansions_cache_file), true);
+    //var_dump_pre($issueExpansions);
 }
 
 //checks to make sure the path to the cache exists and makes it if it doesn't
@@ -166,29 +170,62 @@ function makeNavBar($issueCategories)
     return $outputHtml;
 }
 
-//makes the tiles that hold the issues and, when clicked, will display the information for the issue
-function makeTileArray($issueDefinitions)
+//caches the issue tiles
+function updateTilesCache($tiles_cache_file, $stances_cache_file)
 {
-    $consts = Constants::getInstance();
-    $tileArray = array();
-    foreach($issueDefinitions as $issue => $definition) //for each issue that we have a definition for
+    file_put_contents($tiles_cache_file, json_encode(makeTiles($stances_cache_file)));
+}
+
+//makes the tiles that hold the issues. When the image is clicked, the explanation of the issue will appear.
+//importance checkboxes/sliders as well as stance chekboxes also included.
+function makeTiles($stances_cache_file)
+{
+    $issueStances = json_decode(file_get_contents($stances_cache_file), true); //get the stances that we have from the cache
+    $tileArray = array(); //will hold all the tiles with issues as keys
+    foreach($issueStances as $issue => $stances) //for each issue that we have stances for
     {
-        $pictureSrc = $consts::getDocumentRoot() ."Photos/". $issue ."_picture.png";
+        $pictureSrc = "Photos/". $issue ."_picture.png"; //path to photo for issue
         $title = ucwords(str_replace('_', ' ', $issue)); //title formatting
+        $stanceCheckboxes = getStancesCheckboxesHtml($issueStances); //get the stance checkboxes
+
         $outputHtml = '
         <div class="issueTileContainer">
             <div class="issueTilePictureContainer">
                 <img src="'. $pictureSrc .'" alt="picture for '. $issue .'">
             </div>
             <div class="issueTileTitleContainer">
-                <h3 class="'. $title .'"></h3>
+                <input type="checkbox" class="ynCheckbox" name="ynCheckbox_'. $issue .'" id="ynCheckbox_'. $issue .'"/> <label class="tileTitle" for="ynCheckbox_'. $issue .'">'. $title .'</label>
             </div>
+            <div class="issueTileDetailsContainer">
+                <label class="sliderLabel" for="tileSlider_'. $issue .'">I care this much:</label>
+                <input type="range" name="tileSlider_'. $issue .'"/> <span id="sliderValue_'. $issue .'"></span>
+                <div class="issueStancesContainer">
+                    '. $stanceCheckboxes[$issue] .'
+                </div>            </div>
         </div>
         ';
         $tileArray[$issue] = $outputHtml;
     }
+    return $tileArray;
 }
 
+//makes the stances checkboxes and associated labels for each issue
+function getStancesCheckboxesHtml($issueStances)
+{
+    $outputArray = array(); //issues as keys
+    foreach($issueStances as $issue => $stances) //for every issue
+    {
+        $outputHtml = '';
+        foreach($stances as $stanceNumber => $singleStance) //for every stance
+        {
+            $outputHtml .= '<br><input type="checkbox" name="'. $stanceNumber .'_'. $issue .'" id="'. $stanceNumber .'_'. $issue .'"/><label class="stanceTitle" for="'. $stanceNumber .'_'. $issue .'">'. $singleStance .'</label>';
+        }
+        $outputArray[$issue] = $outputHtml;
+    }
+    return $outputArray;
+}
+
+//caches the expansions containers
 function updateExpansionsCache($expansions_cache_file, $issueDefinitions, $issueReferences, $issueStances)
 {
     file_put_contents($expansions_cache_file, json_encode(makeExpansionsPopups($issueDefinitions, $issueReferences, $issueStances)));
