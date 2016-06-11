@@ -160,6 +160,7 @@ function stancesJsonInterpret($stances)
     return $stancesDecoded;
 }
 
+/* this should be obselete now, keeping it around for a little while just in case 
 function setupPatronIssuesBox($patronId)
 {
     $issuesCookie = $_COOKIE[Constants::getPatronIssuesCookieName()]; //get cookie
@@ -189,7 +190,7 @@ function setupPatronIssuesBox($patronId)
         ';
         $outputContainersArray[] = $outputHtml; //add it to the array, in order of importance
     }
-}
+}*/
 
 function debug_to_console( $data ) {
 

@@ -1055,1035 +1055,1038 @@
       <column id="328" parent="12" name="donation_amount">
         <data-type>double</data-type>
       </column>
-      <index id="329" parent="12" name="patrons_basic_info_id_uindex">
+      <column id="329" parent="12" name="date_created">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="330" parent="12" name="patrons_basic_info_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="330" parent="12" name="patrons_basic_info_id_uindex">
+      <key id="331" parent="12" name="patrons_basic_info_id_uindex">
         <columns>id</columns>
         <underlying-index>patrons_basic_info_id_uindex</underlying-index>
       </key>
-      <key id="331" parent="12" name="PRIMARY">
+      <key id="332" parent="12" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="332" parent="13" name="id">
+      <column id="333" parent="13" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="333" parent="13" name="basic_info_id_fk">
+      <column id="334" parent="13" name="basic_info_id_fk">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="334" parent="13" name="abortion">
+      <column id="335" parent="13" name="abortion">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="335" parent="13" name="affirmative_action">
+      <column id="336" parent="13" name="affirmative_action">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="336" parent="13" name="birth_control">
+      <column id="337" parent="13" name="birth_control">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="337" parent="13" name="campaign_finance">
+      <column id="338" parent="13" name="campaign_finance">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="338" parent="13" name="capital_gains_taxes">
+      <column id="339" parent="13" name="capital_gains_taxes">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="339" parent="13" name="civil_rights">
+      <column id="340" parent="13" name="civil_rights">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="340" parent="13" name="climate_change">
+      <column id="341" parent="13" name="climate_change">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="341" parent="13" name="corporate_income_taxes">
+      <column id="342" parent="13" name="corporate_income_taxes">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="342" parent="13" name="death_penalty">
+      <column id="343" parent="13" name="death_penalty">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="343" parent="13" name="digital_privacy">
+      <column id="344" parent="13" name="digital_privacy">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="344" parent="13" name="drug_decriminalization">
+      <column id="345" parent="13" name="drug_decriminalization">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="345" parent="13" name="education_funding">
+      <column id="346" parent="13" name="education_funding">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="346" parent="13" name="equal_pay">
+      <column id="347" parent="13" name="equal_pay">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="347" parent="13" name="euthanasia">
+      <column id="348" parent="13" name="euthanasia">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="348" parent="13" name="farm_subsidies">
+      <column id="349" parent="13" name="farm_subsidies">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="349" parent="13" name="foreign_aid">
+      <column id="350" parent="13" name="foreign_aid">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="350" parent="13" name="foreign_policy_middle_east">
+      <column id="351" parent="13" name="foreign_policy_middle_east">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="351" parent="13" name="fracking">
+      <column id="352" parent="13" name="fracking">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="352" parent="13" name="gerrymandering">
+      <column id="353" parent="13" name="gerrymandering">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="353" parent="13" name="government_debt">
+      <column id="354" parent="13" name="government_debt">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="354" parent="13" name="government_lobbying">
+      <column id="355" parent="13" name="government_lobbying">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="355" parent="13" name="government_spending">
+      <column id="356" parent="13" name="government_spending">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="356" parent="13" name="green_energy">
+      <column id="357" parent="13" name="green_energy">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="357" parent="13" name="guantanamo_bay">
+      <column id="358" parent="13" name="guantanamo_bay">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="358" parent="13" name="gun_control">
+      <column id="359" parent="13" name="gun_control">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="359" parent="13" name="health_care_reform">
+      <column id="360" parent="13" name="health_care_reform">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="360" parent="13" name="immigration_latin_america">
+      <column id="361" parent="13" name="immigration_latin_america">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="361" parent="13" name="income_inequality">
+      <column id="362" parent="13" name="income_inequality">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="362" parent="13" name="income_taxes">
+      <column id="363" parent="13" name="income_taxes">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="363" parent="13" name="infrastructure_funding">
+      <column id="364" parent="13" name="infrastructure_funding">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="364" parent="13" name="israel">
+      <column id="365" parent="13" name="israel">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="365" parent="13" name="lgbtq">
+      <column id="366" parent="13" name="lgbtq">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="366" parent="13" name="marijuana_legalization">
+      <column id="367" parent="13" name="marijuana_legalization">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="367" parent="13" name="medicaid">
+      <column id="368" parent="13" name="medicaid">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="368" parent="13" name="military_drones">
+      <column id="369" parent="13" name="military_drones">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="369" parent="13" name="military_spending">
+      <column id="370" parent="13" name="military_spending">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="370" parent="13" name="minimum_wage">
+      <column id="371" parent="13" name="minimum_wage">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="371" parent="13" name="nasa_funding">
+      <column id="372" parent="13" name="nasa_funding">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="372" parent="13" name="net_neutrality">
+      <column id="373" parent="13" name="net_neutrality">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="373" parent="13" name="nsa_surveillance">
+      <column id="374" parent="13" name="nsa_surveillance">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="374" parent="13" name="nuclear_disarmament">
+      <column id="375" parent="13" name="nuclear_disarmament">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="375" parent="13" name="offshore_banking">
+      <column id="376" parent="13" name="offshore_banking">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="376" parent="13" name="oil_industry">
+      <column id="377" parent="13" name="oil_industry">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="377" parent="13" name="pension_reform">
+      <column id="378" parent="13" name="pension_reform">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="378" parent="13" name="planned_parenthood">
+      <column id="379" parent="13" name="planned_parenthood">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="379" parent="13" name="pollution">
+      <column id="380" parent="13" name="pollution">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="380" parent="13" name="property_taxes">
+      <column id="381" parent="13" name="property_taxes">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="381" parent="13" name="refugee_crisis">
+      <column id="382" parent="13" name="refugee_crisis">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="382" parent="13" name="religious_freedom">
+      <column id="383" parent="13" name="religious_freedom">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="383" parent="13" name="scientific_funding">
+      <column id="384" parent="13" name="scientific_funding">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="384" parent="13" name="sick_and_maternity_leave">
+      <column id="385" parent="13" name="sick_and_maternity_leave">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="385" parent="13" name="social_security">
+      <column id="386" parent="13" name="social_security">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="386" parent="13" name="term_limits">
+      <column id="387" parent="13" name="term_limits">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="387" parent="13" name="terrorism">
+      <column id="388" parent="13" name="terrorism">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="388" parent="13" name="torture">
+      <column id="389" parent="13" name="torture">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="389" parent="13" name="unions">
+      <column id="390" parent="13" name="unions">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="390" parent="13" name="vaccinations">
+      <column id="391" parent="13" name="vaccinations">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="391" parent="13" name="voter_id_laws">
+      <column id="392" parent="13" name="voter_id_laws">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="392" parent="13" name="wall_street_regulations">
+      <column id="393" parent="13" name="wall_street_regulations">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="393" parent="13" name="war_on_isis">
+      <column id="394" parent="13" name="war_on_isis">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="394" parent="13" name="welfare">
+      <column id="395" parent="13" name="welfare">
         <data-type>smallint(6)</data-type>
       </column>
-      <column id="395" parent="13" name="women_in_combat">
+      <column id="396" parent="13" name="women_in_combat">
         <data-type>smallint(6)</data-type>
       </column>
-      <index id="396" parent="13" name="basic_info_fk">
+      <index id="397" parent="13" name="basic_info_fk">
         <columns>basic_info_id_fk</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="397" parent="13" name="patrons_issues_importances_id_uindex">
+      <index id="398" parent="13" name="patrons_issues_importances_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="398" parent="13" name="patrons_issues_importances_id_uindex">
+      <key id="399" parent="13" name="patrons_issues_importances_id_uindex">
         <columns>id</columns>
         <underlying-index>patrons_issues_importances_id_uindex</underlying-index>
       </key>
-      <key id="399" parent="13" name="PRIMARY">
+      <key id="400" parent="13" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="400" parent="13" name="basic_info_fk">
+      <foreign-key id="401" parent="13" name="basic_info_fk">
         <columns>basic_info_id_fk</columns>
         <ref-key>~.patrons_basic_info.patrons_basic_info_id_uindex</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="401" parent="14" name="id">
+      <column id="402" parent="14" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="402" parent="14" name="basic_info_id_fk">
+      <column id="403" parent="14" name="basic_info_id_fk">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="403" parent="14" name="abortion">
+      <column id="404" parent="14" name="abortion">
         <data-type>text</data-type>
       </column>
-      <column id="404" parent="14" name="affirmative_action">
+      <column id="405" parent="14" name="affirmative_action">
         <data-type>text</data-type>
       </column>
-      <column id="405" parent="14" name="birth_control">
+      <column id="406" parent="14" name="birth_control">
         <data-type>text</data-type>
       </column>
-      <column id="406" parent="14" name="campaign_finance">
+      <column id="407" parent="14" name="campaign_finance">
         <data-type>text</data-type>
       </column>
-      <column id="407" parent="14" name="capital_gains_taxes">
+      <column id="408" parent="14" name="capital_gains_taxes">
         <data-type>text</data-type>
       </column>
-      <column id="408" parent="14" name="civil_rights">
+      <column id="409" parent="14" name="civil_rights">
         <data-type>text</data-type>
       </column>
-      <column id="409" parent="14" name="climate_change">
+      <column id="410" parent="14" name="climate_change">
         <data-type>text</data-type>
       </column>
-      <column id="410" parent="14" name="corporate_income_taxes">
+      <column id="411" parent="14" name="corporate_income_taxes">
         <data-type>text</data-type>
       </column>
-      <column id="411" parent="14" name="death_penalty">
+      <column id="412" parent="14" name="death_penalty">
         <data-type>text</data-type>
       </column>
-      <column id="412" parent="14" name="digital_privacy">
+      <column id="413" parent="14" name="digital_privacy">
         <data-type>text</data-type>
       </column>
-      <column id="413" parent="14" name="drug_decriminalization">
+      <column id="414" parent="14" name="drug_decriminalization">
         <data-type>text</data-type>
       </column>
-      <column id="414" parent="14" name="education_funding">
+      <column id="415" parent="14" name="education_funding">
         <data-type>text</data-type>
       </column>
-      <column id="415" parent="14" name="equal_pay">
+      <column id="416" parent="14" name="equal_pay">
         <data-type>text</data-type>
       </column>
-      <column id="416" parent="14" name="euthanasia">
+      <column id="417" parent="14" name="euthanasia">
         <data-type>text</data-type>
       </column>
-      <column id="417" parent="14" name="farm_subsidies">
+      <column id="418" parent="14" name="farm_subsidies">
         <data-type>text</data-type>
       </column>
-      <column id="418" parent="14" name="foreign_aid">
+      <column id="419" parent="14" name="foreign_aid">
         <data-type>text</data-type>
       </column>
-      <column id="419" parent="14" name="foreign_policy_middle_east">
+      <column id="420" parent="14" name="foreign_policy_middle_east">
         <data-type>text</data-type>
       </column>
-      <column id="420" parent="14" name="fracking">
+      <column id="421" parent="14" name="fracking">
         <data-type>text</data-type>
       </column>
-      <column id="421" parent="14" name="gerrymandering">
+      <column id="422" parent="14" name="gerrymandering">
         <data-type>text</data-type>
       </column>
-      <column id="422" parent="14" name="government_debt">
+      <column id="423" parent="14" name="government_debt">
         <data-type>text</data-type>
       </column>
-      <column id="423" parent="14" name="government_lobbying">
+      <column id="424" parent="14" name="government_lobbying">
         <data-type>text</data-type>
       </column>
-      <column id="424" parent="14" name="government_spending">
+      <column id="425" parent="14" name="government_spending">
         <data-type>text</data-type>
       </column>
-      <column id="425" parent="14" name="green_energy">
+      <column id="426" parent="14" name="green_energy">
         <data-type>text</data-type>
       </column>
-      <column id="426" parent="14" name="guantanamo_bay">
+      <column id="427" parent="14" name="guantanamo_bay">
         <data-type>text</data-type>
       </column>
-      <column id="427" parent="14" name="gun_control">
+      <column id="428" parent="14" name="gun_control">
         <data-type>text</data-type>
       </column>
-      <column id="428" parent="14" name="health_care_reform">
+      <column id="429" parent="14" name="health_care_reform">
         <data-type>text</data-type>
       </column>
-      <column id="429" parent="14" name="immigration_latin_america">
+      <column id="430" parent="14" name="immigration_latin_america">
         <data-type>text</data-type>
       </column>
-      <column id="430" parent="14" name="income_inequality">
+      <column id="431" parent="14" name="income_inequality">
         <data-type>text</data-type>
       </column>
-      <column id="431" parent="14" name="income_taxes">
+      <column id="432" parent="14" name="income_taxes">
         <data-type>text</data-type>
       </column>
-      <column id="432" parent="14" name="infrastructure_funding">
+      <column id="433" parent="14" name="infrastructure_funding">
         <data-type>text</data-type>
       </column>
-      <column id="433" parent="14" name="israel">
+      <column id="434" parent="14" name="israel">
         <data-type>text</data-type>
       </column>
-      <column id="434" parent="14" name="lgbtq">
+      <column id="435" parent="14" name="lgbtq">
         <data-type>text</data-type>
       </column>
-      <column id="435" parent="14" name="marijuana_legalization">
+      <column id="436" parent="14" name="marijuana_legalization">
         <data-type>text</data-type>
       </column>
-      <column id="436" parent="14" name="medicaid">
+      <column id="437" parent="14" name="medicaid">
         <data-type>text</data-type>
       </column>
-      <column id="437" parent="14" name="military_drones">
+      <column id="438" parent="14" name="military_drones">
         <data-type>text</data-type>
       </column>
-      <column id="438" parent="14" name="military_spending">
+      <column id="439" parent="14" name="military_spending">
         <data-type>text</data-type>
       </column>
-      <column id="439" parent="14" name="minimum_wage">
+      <column id="440" parent="14" name="minimum_wage">
         <data-type>text</data-type>
       </column>
-      <column id="440" parent="14" name="nasa_funding">
+      <column id="441" parent="14" name="nasa_funding">
         <data-type>text</data-type>
       </column>
-      <column id="441" parent="14" name="net_neutrality">
+      <column id="442" parent="14" name="net_neutrality">
         <data-type>text</data-type>
       </column>
-      <column id="442" parent="14" name="nsa_surveillance">
+      <column id="443" parent="14" name="nsa_surveillance">
         <data-type>text</data-type>
       </column>
-      <column id="443" parent="14" name="nuclear_disarmament">
+      <column id="444" parent="14" name="nuclear_disarmament">
         <data-type>text</data-type>
       </column>
-      <column id="444" parent="14" name="offshore_banking">
+      <column id="445" parent="14" name="offshore_banking">
         <data-type>text</data-type>
       </column>
-      <column id="445" parent="14" name="oil_industry">
+      <column id="446" parent="14" name="oil_industry">
         <data-type>text</data-type>
       </column>
-      <column id="446" parent="14" name="pension_reform">
+      <column id="447" parent="14" name="pension_reform">
         <data-type>text</data-type>
       </column>
-      <column id="447" parent="14" name="planned_parenthood">
+      <column id="448" parent="14" name="planned_parenthood">
         <data-type>text</data-type>
       </column>
-      <column id="448" parent="14" name="pollution">
+      <column id="449" parent="14" name="pollution">
         <data-type>text</data-type>
       </column>
-      <column id="449" parent="14" name="property_taxes">
+      <column id="450" parent="14" name="property_taxes">
         <data-type>text</data-type>
       </column>
-      <column id="450" parent="14" name="refugee_crisis">
+      <column id="451" parent="14" name="refugee_crisis">
         <data-type>text</data-type>
       </column>
-      <column id="451" parent="14" name="religious_freedom">
+      <column id="452" parent="14" name="religious_freedom">
         <data-type>text</data-type>
       </column>
-      <column id="452" parent="14" name="scientific_funding">
+      <column id="453" parent="14" name="scientific_funding">
         <data-type>text</data-type>
       </column>
-      <column id="453" parent="14" name="sick_and_maternity_leave">
+      <column id="454" parent="14" name="sick_and_maternity_leave">
         <data-type>text</data-type>
       </column>
-      <column id="454" parent="14" name="social_security">
+      <column id="455" parent="14" name="social_security">
         <data-type>text</data-type>
       </column>
-      <column id="455" parent="14" name="term_limits">
+      <column id="456" parent="14" name="term_limits">
         <data-type>text</data-type>
       </column>
-      <column id="456" parent="14" name="terrorism">
+      <column id="457" parent="14" name="terrorism">
         <data-type>text</data-type>
       </column>
-      <column id="457" parent="14" name="torture">
+      <column id="458" parent="14" name="torture">
         <data-type>text</data-type>
       </column>
-      <column id="458" parent="14" name="unions">
+      <column id="459" parent="14" name="unions">
         <data-type>text</data-type>
       </column>
-      <column id="459" parent="14" name="vaccinations">
+      <column id="460" parent="14" name="vaccinations">
         <data-type>text</data-type>
       </column>
-      <column id="460" parent="14" name="voter_id_laws">
+      <column id="461" parent="14" name="voter_id_laws">
         <data-type>text</data-type>
       </column>
-      <column id="461" parent="14" name="wall_street_regulations">
+      <column id="462" parent="14" name="wall_street_regulations">
         <data-type>text</data-type>
       </column>
-      <column id="462" parent="14" name="war_on_isis">
+      <column id="463" parent="14" name="war_on_isis">
         <data-type>text</data-type>
       </column>
-      <column id="463" parent="14" name="welfare">
+      <column id="464" parent="14" name="welfare">
         <data-type>text</data-type>
       </column>
-      <column id="464" parent="14" name="women_in_combat">
+      <column id="465" parent="14" name="women_in_combat">
         <data-type>text</data-type>
       </column>
-      <index id="465" parent="14" name="basic_info_id">
+      <index id="466" parent="14" name="basic_info_id">
         <columns>basic_info_id_fk</columns>
         <desc-columns></desc-columns>
       </index>
-      <index id="466" parent="14" name="patrons_issues_stances_id_uindex">
+      <index id="467" parent="14" name="patrons_issues_stances_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="467" parent="14" name="patrons_issues_stances_id_uindex">
+      <key id="468" parent="14" name="patrons_issues_stances_id_uindex">
         <columns>id</columns>
         <underlying-index>patrons_issues_stances_id_uindex</underlying-index>
       </key>
-      <key id="468" parent="14" name="PRIMARY">
+      <key id="469" parent="14" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="469" parent="14" name="patrons_issues_stances_ibfk_1">
+      <foreign-key id="470" parent="14" name="patrons_issues_stances_ibfk_1">
         <columns>basic_info_id_fk</columns>
         <ref-key>~.patrons_basic_info.patrons_basic_info_id_uindex</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="470" parent="15" name="id">
+      <column id="471" parent="15" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="471" parent="15" name="basic_info_id_fk">
+      <column id="472" parent="15" name="basic_info_id_fk">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="472" parent="15" name="abortion">
+      <column id="473" parent="15" name="abortion">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="473" parent="15" name="affirmative_action">
+      <column id="474" parent="15" name="affirmative_action">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="474" parent="15" name="birth_control">
+      <column id="475" parent="15" name="birth_control">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="475" parent="15" name="campaign_finance">
+      <column id="476" parent="15" name="campaign_finance">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="476" parent="15" name="capital_gains_taxes">
+      <column id="477" parent="15" name="capital_gains_taxes">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="477" parent="15" name="civil_rights">
+      <column id="478" parent="15" name="civil_rights">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="478" parent="15" name="climate_change">
+      <column id="479" parent="15" name="climate_change">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="479" parent="15" name="corporate_income_taxes">
+      <column id="480" parent="15" name="corporate_income_taxes">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="480" parent="15" name="death_penalty">
+      <column id="481" parent="15" name="death_penalty">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="481" parent="15" name="digital_privacy">
+      <column id="482" parent="15" name="digital_privacy">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="482" parent="15" name="drug_decriminalization">
+      <column id="483" parent="15" name="drug_decriminalization">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="483" parent="15" name="education_funding">
+      <column id="484" parent="15" name="education_funding">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="484" parent="15" name="equal_pay">
+      <column id="485" parent="15" name="equal_pay">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="485" parent="15" name="euthanasia">
+      <column id="486" parent="15" name="euthanasia">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="486" parent="15" name="farm_subsidies">
+      <column id="487" parent="15" name="farm_subsidies">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="487" parent="15" name="foreign_aid">
+      <column id="488" parent="15" name="foreign_aid">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="488" parent="15" name="foreign_policy_middle_east">
+      <column id="489" parent="15" name="foreign_policy_middle_east">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="489" parent="15" name="fracking">
+      <column id="490" parent="15" name="fracking">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="490" parent="15" name="gerrymandering">
+      <column id="491" parent="15" name="gerrymandering">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="491" parent="15" name="government_debt">
+      <column id="492" parent="15" name="government_debt">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="492" parent="15" name="government_lobbying">
+      <column id="493" parent="15" name="government_lobbying">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="493" parent="15" name="government_spending">
+      <column id="494" parent="15" name="government_spending">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="494" parent="15" name="green_energy">
+      <column id="495" parent="15" name="green_energy">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="495" parent="15" name="guantanamo_bay">
+      <column id="496" parent="15" name="guantanamo_bay">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="496" parent="15" name="gun_control">
+      <column id="497" parent="15" name="gun_control">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="497" parent="15" name="health_care_reform">
+      <column id="498" parent="15" name="health_care_reform">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="498" parent="15" name="immigration_latin_america">
+      <column id="499" parent="15" name="immigration_latin_america">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="499" parent="15" name="income_inequality">
+      <column id="500" parent="15" name="income_inequality">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="500" parent="15" name="income_taxes">
+      <column id="501" parent="15" name="income_taxes">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="501" parent="15" name="infrastructure_funding">
+      <column id="502" parent="15" name="infrastructure_funding">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="502" parent="15" name="israel">
+      <column id="503" parent="15" name="israel">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="503" parent="15" name="lgbtq">
+      <column id="504" parent="15" name="lgbtq">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="504" parent="15" name="marijuana_legalization">
+      <column id="505" parent="15" name="marijuana_legalization">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="505" parent="15" name="medicaid">
+      <column id="506" parent="15" name="medicaid">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="506" parent="15" name="military_drones">
+      <column id="507" parent="15" name="military_drones">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="507" parent="15" name="military_spending">
+      <column id="508" parent="15" name="military_spending">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="508" parent="15" name="minimum_wage">
+      <column id="509" parent="15" name="minimum_wage">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="509" parent="15" name="nasa_funding">
+      <column id="510" parent="15" name="nasa_funding">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="510" parent="15" name="net_neutrality">
+      <column id="511" parent="15" name="net_neutrality">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="511" parent="15" name="nsa_surveillance">
+      <column id="512" parent="15" name="nsa_surveillance">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="512" parent="15" name="nuclear_disarmament">
+      <column id="513" parent="15" name="nuclear_disarmament">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="513" parent="15" name="offshore_banking">
+      <column id="514" parent="15" name="offshore_banking">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="514" parent="15" name="oil_industry">
+      <column id="515" parent="15" name="oil_industry">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="515" parent="15" name="pension_reform">
+      <column id="516" parent="15" name="pension_reform">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="516" parent="15" name="planned_parenthood">
+      <column id="517" parent="15" name="planned_parenthood">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="517" parent="15" name="pollution">
+      <column id="518" parent="15" name="pollution">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="518" parent="15" name="property_taxes">
+      <column id="519" parent="15" name="property_taxes">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="519" parent="15" name="refugee_crisis">
+      <column id="520" parent="15" name="refugee_crisis">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="520" parent="15" name="religious_freedom">
+      <column id="521" parent="15" name="religious_freedom">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="521" parent="15" name="scientific_funding">
+      <column id="522" parent="15" name="scientific_funding">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="522" parent="15" name="sick_and_maternity_leave">
+      <column id="523" parent="15" name="sick_and_maternity_leave">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="523" parent="15" name="social_security">
+      <column id="524" parent="15" name="social_security">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="524" parent="15" name="term_limits">
+      <column id="525" parent="15" name="term_limits">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="525" parent="15" name="terrorism">
+      <column id="526" parent="15" name="terrorism">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="526" parent="15" name="torture">
+      <column id="527" parent="15" name="torture">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="527" parent="15" name="unions">
+      <column id="528" parent="15" name="unions">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="528" parent="15" name="vaccinations">
+      <column id="529" parent="15" name="vaccinations">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="529" parent="15" name="voter_id_laws">
+      <column id="530" parent="15" name="voter_id_laws">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="530" parent="15" name="wall_street_regulations">
+      <column id="531" parent="15" name="wall_street_regulations">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="531" parent="15" name="war_on_isis">
+      <column id="532" parent="15" name="war_on_isis">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="532" parent="15" name="welfare">
+      <column id="533" parent="15" name="welfare">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <column id="533" parent="15" name="women_in_combat">
+      <column id="534" parent="15" name="women_in_combat">
         <data-type>bit(1)</data-type>
         <default-expression>b&apos;0&apos;</default-expression>
       </column>
-      <index id="534" parent="15" name="patrons_issues_yn_id_uindex">
+      <index id="535" parent="15" name="patrons_issues_yn_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <index id="535" parent="15" name="patrons_issues_yn___fk">
+      <index id="536" parent="15" name="patrons_issues_yn___fk">
         <columns>basic_info_id_fk</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="536" parent="15" name="patrons_issues_yn_id_uindex">
+      <key id="537" parent="15" name="patrons_issues_yn_id_uindex">
         <columns>id</columns>
         <underlying-index>patrons_issues_yn_id_uindex</underlying-index>
       </key>
-      <key id="537" parent="15" name="PRIMARY">
+      <key id="538" parent="15" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <foreign-key id="538" parent="15" name="patrons_issues_yn___fk">
+      <foreign-key id="539" parent="15" name="patrons_issues_yn___fk">
         <columns>basic_info_id_fk</columns>
         <ref-key>~.patrons_basic_info.patrons_basic_info_id_uindex</ref-key>
         <cascade-update-rule>restrict</cascade-update-rule>
         <cascade-delete-rule>restrict</cascade-delete-rule>
       </foreign-key>
-      <column id="539" parent="16" name="id">
+      <column id="540" parent="16" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="540" parent="16" name="category">
+      <column id="541" parent="16" name="category">
         <mandatory>1</mandatory>
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="541" parent="16" name="issue_1">
+      <column id="542" parent="16" name="issue_1">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="542" parent="16" name="issue_2">
+      <column id="543" parent="16" name="issue_2">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="543" parent="16" name="issue_3">
+      <column id="544" parent="16" name="issue_3">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="544" parent="16" name="issue_4">
+      <column id="545" parent="16" name="issue_4">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="545" parent="16" name="issue_5">
+      <column id="546" parent="16" name="issue_5">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="546" parent="16" name="issue_6">
+      <column id="547" parent="16" name="issue_6">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="547" parent="16" name="issue_7">
+      <column id="548" parent="16" name="issue_7">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="548" parent="16" name="issue_8">
+      <column id="549" parent="16" name="issue_8">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="549" parent="16" name="issue_9">
+      <column id="550" parent="16" name="issue_9">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="550" parent="16" name="issue_10">
+      <column id="551" parent="16" name="issue_10">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="551" parent="16" name="issue_11">
+      <column id="552" parent="16" name="issue_11">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="552" parent="16" name="issue_12">
+      <column id="553" parent="16" name="issue_12">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="553" parent="16" name="issue_13">
+      <column id="554" parent="16" name="issue_13">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="554" parent="16" name="issue_14">
+      <column id="555" parent="16" name="issue_14">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="555" parent="16" name="issue_15">
+      <column id="556" parent="16" name="issue_15">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="556" parent="16" name="issue_16">
+      <column id="557" parent="16" name="issue_16">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="557" parent="16" name="issue_17">
+      <column id="558" parent="16" name="issue_17">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="558" parent="16" name="issue_18">
+      <column id="559" parent="16" name="issue_18">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="559" parent="16" name="issue_19">
+      <column id="560" parent="16" name="issue_19">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="560" parent="16" name="issue_20">
+      <column id="561" parent="16" name="issue_20">
         <data-type>varchar(100)</data-type>
       </column>
-      <index id="561" parent="16" name="issue_categories_id_uindex">
+      <index id="562" parent="16" name="issue_categories_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="562" parent="16" name="issue_categories_id_uindex">
+      <key id="563" parent="16" name="issue_categories_id_uindex">
         <columns>id</columns>
         <underlying-index>issue_categories_id_uindex</underlying-index>
       </key>
-      <key id="563" parent="16" name="PRIMARY">
+      <key id="564" parent="16" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="564" parent="17" name="id">
+      <column id="565" parent="17" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="565" parent="17" name="submitted_by">
+      <column id="566" parent="17" name="submitted_by">
         <mandatory>1</mandatory>
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="566" parent="17" name="submitted_when">
+      <column id="567" parent="17" name="submitted_when">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="567" parent="17" name="topic">
+      <column id="568" parent="17" name="topic">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="568" parent="17" name="content">
+      <column id="569" parent="17" name="content">
         <data-type>text</data-type>
       </column>
-      <column id="569" parent="17" name="sources">
+      <column id="570" parent="17" name="sources">
         <data-type>text</data-type>
       </column>
-      <column id="570" parent="17" name="for_page">
+      <column id="571" parent="17" name="for_page">
         <data-type>varchar(500)</data-type>
       </column>
-      <index id="571" parent="17" name="submitted_info_id_uindex">
+      <index id="572" parent="17" name="submitted_info_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="572" parent="17" name="PRIMARY">
+      <key id="573" parent="17" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <key id="573" parent="17" name="submitted_info_id_uindex">
+      <key id="574" parent="17" name="submitted_info_id_uindex">
         <columns>id</columns>
         <underlying-index>submitted_info_id_uindex</underlying-index>
       </key>
-      <column id="574" parent="18" name="id">
+      <column id="575" parent="18" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="575" parent="18" name="submitted_by">
+      <column id="576" parent="18" name="submitted_by">
         <mandatory>1</mandatory>
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="576" parent="18" name="submitted_when">
+      <column id="577" parent="18" name="submitted_when">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="577" parent="18" name="article_title">
+      <column id="578" parent="18" name="article_title">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="578" parent="18" name="author">
+      <column id="579" parent="18" name="author">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="579" parent="18" name="news_outlet">
+      <column id="580" parent="18" name="news_outlet">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="580" parent="18" name="date_published">
+      <column id="581" parent="18" name="date_published">
         <data-type>date</data-type>
       </column>
-      <column id="581" parent="18" name="primary_people">
+      <column id="582" parent="18" name="primary_people">
         <data-type>text</data-type>
       </column>
-      <column id="582" parent="18" name="secondary_people">
+      <column id="583" parent="18" name="secondary_people">
         <data-type>text</data-type>
       </column>
-      <column id="583" parent="18" name="media_types">
+      <column id="584" parent="18" name="media_types">
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="584" parent="18" name="link">
+      <column id="585" parent="18" name="link">
         <mandatory>1</mandatory>
         <data-type>varchar(250)</data-type>
       </column>
-      <index id="585" parent="18" name="submitted_news_id_uindex">
+      <index id="586" parent="18" name="submitted_news_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="586" parent="18" name="PRIMARY">
+      <key id="587" parent="18" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <key id="587" parent="18" name="submitted_news_id_uindex">
+      <key id="588" parent="18" name="submitted_news_id_uindex">
         <columns>id</columns>
         <underlying-index>submitted_news_id_uindex</underlying-index>
       </key>
-      <column id="588" parent="19" name="id">
+      <column id="589" parent="19" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="589" parent="19" name="submitted_by">
+      <column id="590" parent="19" name="submitted_by">
         <mandatory>1</mandatory>
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="590" parent="19" name="submitted_when">
+      <column id="591" parent="19" name="submitted_when">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="591" parent="19" name="topic">
+      <column id="592" parent="19" name="topic">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="592" parent="19" name="content">
+      <column id="593" parent="19" name="content">
         <data-type>text</data-type>
       </column>
-      <column id="593" parent="19" name="sources">
+      <column id="594" parent="19" name="sources">
         <data-type>text</data-type>
       </column>
-      <column id="594" parent="19" name="for_page">
+      <column id="595" parent="19" name="for_page">
         <data-type>varchar(500)</data-type>
       </column>
-      <column id="595" parent="19" name="reviewed_by">
+      <column id="596" parent="19" name="reviewed_by">
         <mandatory>1</mandatory>
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="596" parent="19" name="reviewed_when">
+      <column id="597" parent="19" name="reviewed_when">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="597" parent="19" name="points_awarded">
+      <column id="598" parent="19" name="points_awarded">
         <data-type>tinyint(4)</data-type>
       </column>
-      <column id="598" parent="19" name="points_possible">
+      <column id="599" parent="19" name="points_possible">
         <data-type>tinyint(4)</data-type>
       </column>
-      <column id="599" parent="19" name="review_level">
+      <column id="600" parent="19" name="review_level">
         <data-type>tinyint(4)</data-type>
       </column>
-      <column id="600" parent="19" name="comments">
+      <column id="601" parent="19" name="comments">
         <data-type>text</data-type>
       </column>
-      <index id="601" parent="19" name="submitted_info_archive_id_uindex">
+      <index id="602" parent="19" name="submitted_info_archive_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="602" parent="19" name="PRIMARY">
+      <key id="603" parent="19" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <key id="603" parent="19" name="submitted_info_archive_id_uindex">
+      <key id="604" parent="19" name="submitted_info_archive_id_uindex">
         <columns>id</columns>
         <underlying-index>submitted_info_archive_id_uindex</underlying-index>
       </key>
-      <column id="604" parent="20" name="id">
+      <column id="605" parent="20" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="605" parent="20" name="submitted_by">
+      <column id="606" parent="20" name="submitted_by">
         <mandatory>1</mandatory>
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="606" parent="20" name="submitted_when">
+      <column id="607" parent="20" name="submitted_when">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="607" parent="20" name="article_title">
+      <column id="608" parent="20" name="article_title">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="608" parent="20" name="author">
+      <column id="609" parent="20" name="author">
         <data-type>varchar(100)</data-type>
       </column>
-      <column id="609" parent="20" name="news_outlet">
+      <column id="610" parent="20" name="news_outlet">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="610" parent="20" name="date_published">
+      <column id="611" parent="20" name="date_published">
         <data-type>date</data-type>
       </column>
-      <column id="611" parent="20" name="primary_people">
+      <column id="612" parent="20" name="primary_people">
         <data-type>text</data-type>
       </column>
-      <column id="612" parent="20" name="secondary_people">
+      <column id="613" parent="20" name="secondary_people">
         <data-type>text</data-type>
       </column>
-      <column id="613" parent="20" name="media_types">
+      <column id="614" parent="20" name="media_types">
         <data-type>varchar(200)</data-type>
       </column>
-      <column id="614" parent="20" name="reviewed_by">
+      <column id="615" parent="20" name="reviewed_by">
         <mandatory>1</mandatory>
         <data-type>varchar(25)</data-type>
       </column>
-      <column id="615" parent="20" name="reviewed_when">
+      <column id="616" parent="20" name="reviewed_when">
         <mandatory>1</mandatory>
         <data-type>datetime</data-type>
       </column>
-      <column id="616" parent="20" name="auto_posted">
+      <column id="617" parent="20" name="auto_posted">
         <data-type>bit(1)</data-type>
       </column>
-      <column id="617" parent="20" name="review_level">
+      <column id="618" parent="20" name="review_level">
         <data-type>tinyint(4)</data-type>
       </column>
-      <column id="618" parent="20" name="points_awarded">
+      <column id="619" parent="20" name="points_awarded">
         <data-type>tinyint(4)</data-type>
       </column>
-      <column id="619" parent="20" name="points_possible">
+      <column id="620" parent="20" name="points_possible">
         <data-type>tinyint(4)</data-type>
       </column>
-      <column id="620" parent="20" name="link">
+      <column id="621" parent="20" name="link">
         <mandatory>1</mandatory>
         <data-type>varchar(250)</data-type>
       </column>
-      <column id="621" parent="20" name="comments">
+      <column id="622" parent="20" name="comments">
         <data-type>text</data-type>
       </column>
-      <index id="622" parent="20" name="submitted_news_archive_id_uindex">
+      <index id="623" parent="20" name="submitted_news_archive_id_uindex">
         <columns>id</columns>
         <desc-columns></desc-columns>
         <unique>1</unique>
       </index>
-      <key id="623" parent="20" name="PRIMARY">
+      <key id="624" parent="20" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <key id="624" parent="20" name="submitted_news_archive_id_uindex">
+      <key id="625" parent="20" name="submitted_news_archive_id_uindex">
         <columns>id</columns>
         <underlying-index>submitted_news_archive_id_uindex</underlying-index>
       </key>

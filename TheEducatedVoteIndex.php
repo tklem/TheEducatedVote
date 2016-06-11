@@ -80,7 +80,7 @@
         </div>
 
         <div class= "createAccountContainer">
-            <form method="post" action="@@@@@need somewhere to send this@@@@@" enctype = "multipart/form-data">
+            <form method="post" action="CreatePatron.php" enctype = "multipart/form-data">
                 <label for="name">Full Name:
                     <input type="text" name="name" id="name">
                 </label>
@@ -90,7 +90,7 @@
                 </label>
 
                 <label for="username">Username:
-                    <input type="text" name="Username" id="Username">
+                    <input type="text" name="username" id="Username">
                 </label>
 
                 <label for="password">Password:
@@ -122,7 +122,7 @@
                     <input type="text" name="zipcode" id="zipcode">
                 </label>
 
-                <input type="submit" name="Create New Account" value="submitNewPatron">
+                <input type="submit" name="submitNewPatron" value="Create New Account">
             </form>
         </div>
     </div>
