@@ -379,23 +379,23 @@ function getCandidateIssueInfo($basic_info_id)
         $issueCandidateExpansion = $issuesExpansions[$key];
 
         $currOuputHtml = '
-            <div class="issueInfoDiv" id="'. $key .'">
-                <div class="issueHeadDiv">
-                    <div class="issueNameDiv">
-                        <span class="issueNameSpan">'. $issueNameParsed .'</span>
+            <div class="issueInfoContainer" id="'. $key .'">
+                <div class="issueHeadContainer">
+                    <div class="issueNameContainer">
+                        <span class="issueName">'. $issueNameParsed .'</span>
                     </div>
-                    <div class="issueStanceDiv" data-stance="'. htmlspecialchars($issueCandidateStance, ENT_QUOTES) .'">
-                        <span class="issueStanceSpan">'. htmlspecialchars($issueCandidateStance, ENT_QUOTES) .'</span>
+                    <div class="issueStanceContainer" data-stance="'. htmlspecialchars($issueCandidateStance, ENT_QUOTES) .'">
+                        <span class="issueStance">'. htmlspecialchars($issueCandidateStance, ENT_QUOTES) .'</span>
                     </div>
-                    <div class="issueCandidateImportDiv" data-candidate-import="'. htmlspecialchars($issueCandidateImport, ENT_QUOTES) .'">
-                        <!--<span class="issueCandidateImportSpan">'. htmlspecialchars($issueCandidateImport, ENT_QUOTES) .'</span>-->
+                    <div class="issueCandidateImportContainer" data-candidate-import="'. htmlspecialchars($issueCandidateImport, ENT_QUOTES) .'">
+                        <!--<span class="issueCandidateImport">'. htmlspecialchars($issueCandidateImport, ENT_QUOTES) .'</span>-->
                     </div>
                 </div>
-                <div class="issueExpansionDiv">
-                    <span class="issueExpansionSpan">'. htmlspecialchars($issueCandidateExpansion, ENT_QUOTES) .'</span>
+                <div class="issueExpansionContainer">
+                    <span class="issueExpansion">'. htmlspecialchars($issueCandidateExpansion, ENT_QUOTES) .'</span>
                 </div>
             </div>';
-        $issueOutputArray[] = array($key => $currOuputHtml);
+        $issueOutputArray[$key] = $currOuputHtml;
     }
     return $issueOutputArray;
 }

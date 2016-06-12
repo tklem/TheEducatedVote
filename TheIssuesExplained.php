@@ -45,6 +45,8 @@ function updateCache(&$issueDefinitions, &$issueReferences, &$issueStances)
     if (!file_exists($expansions_cache_file) || filemtime($expansions_cache_file) < (time() - 86400)) {updateExpansionsCache($expansions_cache_file, $issueDefinitions, $issueReferences, $issueStances);}//if file doesn't exist or it hasn't been updated in 24 hours
     //$issueExpansions = json_decode(file_get_contents($expansions_cache_file), true);
     //var_dump_pre($issueExpansions);
+
+    displayTiles($tiles_cache_file);
 }
 
 //checks to make sure the path to the cache exists and makes it if it doesn't
@@ -194,11 +196,11 @@ function makeTiles($stances_cache_file)
                 <img src="'. $pictureSrc .'" alt="picture for '. $issue .'">
             </div>
             <div class="issueTileTitleContainer">
-                <input type="checkbox" class="ynCheckbox" name="ynCheckbox_'. $issue .'" id="ynCheckbox_'. $issue .'"/> <label class="tileTitle" for="ynCheckbox_'. $issue .'">'. $title .'</label>
+                <input type="checkbox" class="ynCheckbox" data-issue="'. $issue .'" name="ynCheckbox|'. $issue .'" id="ynCheckbox|'. $issue .'"/> <label class="tileTitle" for="ynCheckbox|'. $issue .'">'. $title .'</label>
             </div>
             <div class="issueTileDetailsContainer">
                 <label class="sliderLabel" for="tileSlider_'. $issue .'">I care this much:</label>
-                <input type="range" name="tileSlider_'. $issue .'"/> <span id="sliderValue_'. $issue .'"></span>
+                <input type="range" data-issue="'. $issue .'" name="tileSlider|'. $issue .'" id="tileSlider|'. $issue .'"/> <span id="sliderValue|'. $issue .'"></span>
                 <div class="issueStancesContainer">
                     '. $stanceCheckboxes[$issue] .'
                 </div>            </div>
@@ -218,7 +220,7 @@ function getStancesCheckboxesHtml($issueStances)
         $outputHtml = '';
         foreach($stances as $stanceNumber => $singleStance) //for every stance
         {
-            $outputHtml .= '<br><input type="checkbox" name="'. $stanceNumber .'_'. $issue .'" id="'. $stanceNumber .'_'. $issue .'"/><label class="stanceTitle" for="'. $stanceNumber .'_'. $issue .'">'. $singleStance .'</label>';
+            $outputHtml .= '<br><input type="checkbox" class="stanceCheckbox" data-stance="'. $stanceNumber .'" data-issue="'. $issue .'" name="'. $stanceNumber .'|'. $issue .'" id="'. $stanceNumber .'|'. $issue .'"/><label class="stanceTitle" for="'. $stanceNumber .'|'. $issue .'">'. $singleStance .'</label>';
         }
         $outputArray[$issue] = $outputHtml;
     }
@@ -287,6 +289,16 @@ function makeExpansionsPopups($issueDefinitions, $issueReferences, $issueStances
     return $popupsArray;
 }
 
+//displays all the tiles raw 
+function displayTiles($tiles_cache_file)
+{
+    $tiles = json_decode(file_get_contents($tiles_cache_file), true);
+    foreach($tiles as $tile)
+    {
+        echo $tile;
+    }
+}
+
 
 function debug_to_console( $data ) {
 
@@ -331,7 +343,6 @@ function var_dump_pre($mixed = null)
 
 <body>
 
-Well we got here 
 
 </body>
 </html>

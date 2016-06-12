@@ -1,3 +1,31 @@
+<?php
+session_start();
+include '../../TheEducatedVoteConstants.php'; //@@@@@ Yah no
+function orderIssues()
+{
+    $consts = Constants::getInstance();
+    $own_cache_file = $consts::getDocumentRoot() . 'Caches/2016/President/Bernie Sanders.txt'; //@@@@@ pass from previous page or dynamic
+    $issuesHtml = json_decode(file_get_contents($own_cache_file), true);
+    $issuesOutput = '';
+    if(isset($_SESSION['issuesImportances'])) //should be array of importances for the issues
+    {
+        $issuesImportances = $_SESSION['issuesImportances']; //should already be in order
+        foreach($issuesImportances as $issue => $import)
+        {
+            $issuesOutput .= $issuesHtml[$issue];
+        }
+    }
+    else
+    {
+        foreach($issuesHtml as $issue => $html)
+        {
+            $issuesOutput .= $html;
+        }
+    }
+    return $issuesOutput;
+}
+?>
+
 
     
 <!doctype html>
@@ -18,9 +46,9 @@
 </head>
     
 <body>
-    <?php include "C://Users/Kevin/PhpstormProjects/TheEducatedVote/TheEducatedVoteHeader.php"?>
+    <?php include "C:/Users/Kevin/PhpstormProjects/TheEducatedVote/TheEducatedVoteHeader.php"?>
     <div class="mainContainer">
-        <?php include "C://Users/Kevin/PhpstormProjects/TheEducatedVote/TheEducatedVoteSidebar.php"?>
+        <?php include "C:/Users/Kevin/PhpstormProjects/TheEducatedVote/TheEducatedVoteSidebar.php"?>
     
         <div class="basicInfoContainer">
             <div class="candidateNameContainer">
@@ -122,10 +150,11 @@
     </div>
     <div class="issuesOuterContainer">
             <div class="issuesInnerContainer">
+                <?php echo orderIssues()?>
             </div>
             <img src="C://Users/Kevin/PhpstormProjects/TheEducatedVote/Photos/ShowMoreButton.png" alt="Show More">
         </div>
     </div>
-    <?php include "C://Users/Kevin/PhpstormProjects/TheEducatedVote/TheEducatedVoteFooter.php"?>
+    <?php include "C:/Users/Kevin/PhpstormProjects/TheEducatedVote/TheEducatedVoteFooter.php"?>
 </body>
 </html>

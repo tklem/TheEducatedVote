@@ -63,7 +63,7 @@
     <!--right third of screen-->
     <div class="indexRightContainer">
         <div class="loginContainer">
-            <form method="post" action="@@@@@need somewhere to send this@@@@@" enctype = "multipart/form-data">
+            <form method="post" action="VerifyPatron.php" enctype = "multipart/form-data">
                 <label for="loginEntry">Username or Email
                     <input type="text" name="loginEntry" id="loginEntry">
                 </label>
@@ -73,7 +73,7 @@
                 <label for="keepLoggedIn">Keep me logged in
                     <input type="checkbox" name="keepLoggedIn" value="keepLoggedIn"><br>
                 </label>
-                <input type="submit" name="Login" value="submitLogin">
+                <input type="submit" name="submitLogin" value="Submit">
 
                 <p>No account? Click here to make one</p> <!-- changes right side to create account -->
             </form>
